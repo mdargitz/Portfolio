@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Marina Dargitz Web Developer &amp; Graphic Designer</title>
+        <meta name="description" content="Check out Marina's portfolio of 
+        projects spanning the width and bredth of the 'full stack'.">
+        <meta name="viewport" conent="width= device-width, initial-scale=1.0">
+        <!-- To-Do : Add web manifest -->
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- To-Do: Add icon.png and favicon.ico -->
+        <link rel="stylesheet" href="main.css">
+        <!-- Compiled and minified Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons hide-on-med-and-up center">menu</i></a>
+                    <ul class="right hide-on-small">
+                            <li><a href="#about"><i class="material-icons left">person</i>About</a></li>
+                            <li><a href="#projects"><i class="material-icons left"> chrome_reader_mode</i>Projects</a></li>
+                            <li><a href="#contact">Drop Me a Line?</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile">
+            <li><a href="#about"><i class="material-icons left">person</i>About</a></li>
+            <li><a href="#projects"><i class="material-icons left"> chrome_reader_mode</i>Projects</a></li>
+            <li><a href="#contact">Drop Me a Line?</a></li>
+        </ul>           
+        <header role="banner">
+            <h1>
+                Dream <br>
+                Design <br>
+                Develop
+            </h1>
+            <p>Repeat</p>
+            <h2>Marina Dargitz</h2>
+        </header>
+        <section role="region" class="about-container">
+            <!-- <img> TO-DO: Create image for about-me -->
+            <h2>Hi! I'm a full stack developer in love with SEO optimization, responsive design and peppermint tea.</h2>
+            <!-- To-Do: Add good about me secions -->
+        </section>
+        <section role="region" class= "projects-container">
+            <!-- To-Do: find/draw good questionmark/placeholder image -->
+        </section>
+        <section role="region" class = "skills-container">
+            <h2> Skills &amp; Strats</h2>
+            <p>Development is the art of learning new programs, new paradigms and new processis on the daily.
+            But I admit, I've got some favorites!</p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>JQuery</li>
+            </ul>
+        </section>
+        <footer role="contentinfo">
+            <h2>Got Inspiration?</h2>
+            <p>Let's Get Together!</p>
+            <ul>
+                <li>GitHub</li>
+                <li>Email</li>
+            </ul>
+            <form class="contact" method="post">
+                <fieldset>
+                    <legend>How should I reach you?</legend>
+                    <label for="name">Your Name</label>
+                    <input id="name" type="text" name="name" required>
+                    <lable for="email">Your Email</lable>
+                    <input id="email" name="email" type="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>What would you like me to know?</legend>
+                    <lable for="message">Your Message</lable>
+                    <input type="textarea" name="message" id="message" required>
+                </fieldset>
+            </form>
+        </footer>
+        <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- Initialize Materialize JQuery -->
+  <script>
+         var elem = document.querySelector('.sidenav');
+  var instance = M.Sidenav.init(elem, options);
+    </script>
+    </body>
+    
+</html>
