@@ -1,0 +1,233 @@
+/* Colors:
+Lightyellow: ##fffacd
+burnred: #8B635C */
+
+/* Helper classes */
+body {
+  font-family: 'Work Sans', monospace;
+}
+.hidden {
+  display: none;
+}
+/*Nav Styling */
+nav {
+  box-sizing: border-box;
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  padding-top: 100px;
+  background: 
+  /* top, transparent red, faked with gradient */ 
+  linear-gradient(
+    rgba(4, 5, 71, 0.45), 
+    rgba(18, 2, 48, 0.45)
+  ),
+  /* bottom, image */
+  url("https://s14.postimg.cc/b906p3xtt/editedmountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-style {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+.line-style:before, 
+.line-style:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 50%;
+  border-top: 1px solid white;
+}
+.line-style:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.line-style:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+#avatar {
+  vertical-align: middle;
+  max-width: 70%;
+  margin: auto auto;
+  border-radius: 50%;
+}
+
+h2 {
+  color: #283E56;
+  text-align: center;
+  display: inline;
+  font-size: 2em;
+  position: relative;
+  background: white;
+  padding: 5px;
+  margin: 10%;
+  z-index: 1;
+}
+
+hr {
+  margin-top: -85px;
+  margin-bottom: 4em;
+  color: blue;
+}
+
+h1, h2 {
+  font-family: 'Source Code Pro', monospace;
+}
+h1 {
+  color: white;
+  font-size: 2em;
+  margin-top:0;
+  text-align: center;
+}
+
+h2.subtitle {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 200;
+  margin-bottom: 0;
+  padding-top: 15%;
+  background: none;
+  color: white;
+}
+
+
+
+.icon-container {
+  font-size: 2em;
+  list-style: none;
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.icon-container li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.icon-container a {
+  color: white;
+}
+
+.links-container li {
+  margin: 20px 0;
+}
+
+.links-container a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding-left: 25%;
+}
+
+#contact {
+  /* padding: 10%; */
+}
+
+.cards {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card {
+position: relative;
+text-align: center;
+color: white;
+}
+
+.card-img {
+  max-width: 100%;
+}
+.card-content {
+  position: absolute;
+  bottom: 4px;
+  right: 1px;
+  left: 1px;
+  padding: 10% 0;
+  font-weight: bold;
+  font-size: 1em;
+  background: rgba(0,0,0,.8);
+  color: white;
+}
+
+form {
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  margin: 10%;
+  background: #283E56;
+  color: white;
+}
+form input {
+  margin-bottom: 15px;
+}
+
+#submitFormBtn {
+  background: rgb(16, 141, 190);
+  color: white;
+  padding: 5%;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-top: 20px;
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+}
+
+form lable {
+  margin-bottom: 5px;
+}
+
+textarea {
+  font-family: 'Work Sans', monospace;
+}
+
+#about {
+  background: #283E56;
+}
+
+#portfolio {
+  padding-top: 600px;
+  background: yellow;
+}
+
+@media (max-width : 900px) {
+  nav {
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: green;
+  }
+  main {
+    padding-left: 0;
+  }
+}

@@ -9,6 +9,13 @@
     <title>Marina Dargitz Web Developer</title>
     <meta name="description" content="Marina Dargitz developes responsive websites and web apps for utility, for profit and for fun! Check out her portfolio to see what she's done and what's to come.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -16,34 +23,111 @@
       <p> Not sure how to do this? Check out this <a href="https://www.lifewire.com/how-to-update-internet-explorer-2617983">guide</a>!
     <![endif]-->
     <nav>
-      <h1> I Build Apps</h1>
-      <h2>Front-end to Back-end - Code to Users</h2>
-      <ul>
-        <li>Github</li>
-        <li>email</li>
-        <li>Phone</li>
+      <div class="line-style">
+        <img id="avatar" src="http://canebaypetsitting.com/Blog/wp-content/uploads/2015/08/care-for-bunny.jpg" 
+          alt="Marina Dargitz, full stack webdeveloper">
+      </div>
+
+        <h2 class="subtitle">Marina Dargitz</h2>
+        <h1> I Build <span>Web Apps</span></h1>
+      <!-- dynamic text to go here: ideas to reality, front-end to back/code to users -->
+      
+      
+      <ul class="icon-container">
+        <li>
+          <a title="Email me!" href="mailto:marina.dargitz@gmail.com">
+            <i class="fas fa-at"></i>
+          </a>
+        </li>
+        <li>
+          <a title="Github @mdargitz"href="https://github.com/mdargitz">
+          <i class="fab fa-github"></i>
+          </a>
+          
+        </li>
+        <li>
+          <a title="LinkedIn" href="https://www.linkedin.com/in/marinadargitz/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
       </ul>
-      <ul>
-        <li>About & Resume</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
+      <ul class="links-container">
+        <li>
+          <a href="#portfolio">
+              Portfolio
+          </a>
+        </li>
+        <li>
+            <a href="#about">
+                About & Resume
+            </a>
+        </li>
+        <li>
+          <a href="#contact">
+              Contact
+          </a>
+        </li>
       </ul>
     </nav>
 
-    <div class="portfolio">
+    <main role="main">
+    <div id ="portfolio">
       This is my portfolio
       it's pretty bland right now...
 
     </div>
 
-    <div class ="about">
+    <div id ="about">
+      <h2>Full Stack Developer in Boulder Co</h2>
       <button>Download Resume</button>
       I don't like talking about myself.
     </div>
 
-    <div class="contact">
-      But I'd love to talk to you!
+    <div id ="contact">
+      <div class="section-title">
+        <h2>How Can I Help?</h2>
+      </div>
+      <hr>
+      
+      <div class="cards">
+        <div class="card"> 
+            <a href='mai&#108;t&#111;&#58;marina%2Ed&#97;%72gi%7&#52;z&#64;gm&#97;il&#46;com'>
+              <img class="card-img" src="img/mailbox.jpg" alt="mailboxes for email">
+              <p class="card-content"><i class="fas fa-at"></i> : ma&#114;&#105;na&#46;darg&#105;&#116;z&#64;&#103;&#109;ai&#108;&#46;&#99;om</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://github.com/mdargitz">
+              <img class="card-img" src="img/smoke.jpg" alt="mailboxes for email">
+              <p class="card-content"><i class="fab fa-github"></i> : @mdargitz</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://www.linkedin.com/in/marinadargitz/">
+              <img class="card-img" src="img/teamwork.jpg" alt="mailboxes for email">
+              <p class="card-content"><i class="fab fa-linkedin"></i> : /marinadargitz</p>
+            </a>
+        </div>
+      </div>
+
+      <form id="contactform" method="POST">
+        <lable for="name">Your Name</lable>
+        <input name="name" title="name" id="name" type="text" placeholder="What should I call you?" required>
+        <lable for="email">Your Email</lable>
+        <input name="_replyto" title="email" id="email" type="email" required placeholder="How may I reach you?">
+        <lable for="message">Your Message</lable>
+        <textarea name="message" title="message" id="message" rows="4" cols="50" placeholder="How can I help?"></textarea>
+        <div class="hidden">
+          <label for="gotcha">Leave this field blank</label>
+          <input name="_gotcha" type="text" id="age">
+        </div>
+        <input id ="submitFormBtn" value="Let's Connect!" type="submit">
+      </form>
     </div>
-     
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/index.js"></script>
   </body>
 </html>
