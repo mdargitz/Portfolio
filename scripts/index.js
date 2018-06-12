@@ -1,13 +1,12 @@
 /* global $ */
-'use strict';
 
 const smoothScrollHandler = () => {
   $('a').on('click', function(event){
-
+ 
     if (this.hash !== ''){
       event.preventDefault();
     
-      const hash = event.target.hash;
+      const hash = this.hash;
     
       $('html, body').animate(
         {
@@ -29,7 +28,6 @@ const addFormAction = () => {
 
 
 const main = () => {
-  console.log('up and running!');
   smoothScrollHandler();
   addFormAction();
 
