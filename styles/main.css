@@ -19,6 +19,7 @@ h2 {
   text-align: center;
   padding: 15px;
   font-family: 'Source Code Pro', sans-serif;
+  color: white;
 }
 
 h3 {
@@ -32,6 +33,7 @@ p {
 a {
   color: #2098D1;
 }
+
 .btn-hvr {
   width: 300px;
   border: 1px solid white;
@@ -109,22 +111,22 @@ input[type='submit'] {
 /* Navigation Sidebar Styling */
 nav {
   background: linear-gradient(
-    rgba(24, 22, 34, 0.7), 
-    rgba(16, 5, 27, 0.7)
+    rgba(32, 27, 63, .7), 
+    rgba(32, 27, 63, .7)
   ),
   url('/img/navbg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  width: 300px;
+  width: 290px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   height: 100%;
-  border: 2px solid red;
   min-height: 100vh;
   height: 100%;
   position: fixed;
+  padding: 10px;
 }
 
 .avatar {
@@ -133,14 +135,86 @@ nav {
   margin: 20px;
 }
 
+
+
 /* Main Sections stlying */
 main {
   border: 2px solid blue;
   padding-left: 300px;
 }
 
-#portfolio {
-  border: 2px solid orangered;
+
+.portfolio-item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item-img{
+box-shadow: 0 0 10px black;
+}
+
+.item-content {
+  border-left : 2px solid rgb(32, 27, 63);
+  margin-left: 20px;
+}
+
+.item-details{
+  margin: 40px;
+}
+
+.item-details ul {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-details li {
+  border: 1px solid #2098D1;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 2px 5px;
+}
+.item-title {
+  color: black;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+
+.item-desc {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.item-link {
+text-align: center;
+margin: 20px;
+padding-bottom: 20px;
+}
+
+.item-subtitle {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.date::before{
+  content: '■';
+  margin-left: -10px;
+  margin-right: 20px;
+}
+
+.date {
+  font-style: italic;
+  padding-top: 20px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
 }
 
 #about {
@@ -186,15 +260,14 @@ header h2 {
   margin: 10px 20px;
 }
 
-
+.icon-list {
+  margin-bottom: 20px;
+}
 /* Responisve design */
 @media (max-width: 950px) {
-  body {
-    display: block;
-  }
   nav {
-    height: 100%;
-
+    position: relative;
+    min-height: 100%;
   }
   .avatar {
     display: none;
