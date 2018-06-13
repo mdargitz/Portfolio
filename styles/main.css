@@ -171,7 +171,7 @@ box-shadow: 0 0 10px black;
 }
 
 .item-details li {
-  border: 1px solid #2098D1;
+  border: 1px solid rgb(28, 145, 199);
   padding: 10px;
   border-radius: 5px;
   margin: 2px 5px;
