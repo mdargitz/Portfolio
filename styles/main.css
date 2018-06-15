@@ -34,53 +34,6 @@ a {
   color: #2098D1;
 }
 
-.btn-hvr {
-  width: 300px;
-  border: 1px solid white;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 10px black;
-  position: relative;
-  overflow: hidden;
-  background: rgb(32, 27, 63);
-  margin: 20px auto;
-  border-radius: 5px;
-  padding: 10px;
-  color: white;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  cursor: pointer;
-}
-.btn-hvr:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2098D1;
-  border-radius: 100%;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.btn-hvr:hover, .btn-hvr:focus, .btn-hvr:active {
-  color: white;
-}
-.btn-hvr:hover:before, .btn-hvr:focus:before, .btn-hvr:active:before {
-  -webkit-transform: scale(2);
-  transform: scale(2);
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -105,7 +58,23 @@ input {
   padding: 5px;
 }
 
-input[type='submit'] {
+button {
+  width: 400px;
+  margin: 20px auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: #201B3F;
+  color: white;
+  padding: 10px;
+  transition: background-color .5s, border-radius .5s;
+  font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
+  position: relative;
+  background: #2098D1;
+  border-radius: 0px;
   
 }
 /* Navigation Sidebar Styling */
@@ -139,7 +108,6 @@ nav {
 
 /* Main Sections stlying */
 main {
-  border: 2px solid blue;
   padding-left: 300px;
 }
 
@@ -171,10 +139,8 @@ box-shadow: 0 0 10px black;
 }
 
 .item-details li {
-  border: 1px solid rgb(28, 145, 199);
+  font-style: italic;
   padding: 10px;
-  border-radius: 5px;
-  margin: 2px 5px;
 }
 .item-title {
   color: black;
@@ -223,9 +189,32 @@ flex-direction: column;
 justify-content: center;
 }
 
+.skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #2098D1;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: #201B3F 0px 0px 1px;
+}
+
+.skills img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
 header {
   background: rgb(32, 27, 63);
   display: flex;
+
   justify-content: center;
   flex-direction: column;
   padding: 20px 0;
