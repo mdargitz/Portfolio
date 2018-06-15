@@ -104,7 +104,9 @@ nav {
   margin: 20px;
 }
 
-
+nav a {
+  color: white;
+}
 
 /* Main Sections stlying */
 main {
@@ -189,6 +191,10 @@ flex-direction: column;
 justify-content: center;
 }
 
+.skills {
+  margin-top: 40px;
+}
+
 .skills ul {
   display: flex;
   justify-content: center;
@@ -198,10 +204,11 @@ justify-content: center;
 .skills li {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   border: 1px solid #2098D1;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   margin: 10px;
   box-shadow: #201B3F 0px 0px 1px;
 }
@@ -209,12 +216,12 @@ justify-content: center;
 .skills img {
   max-width: 50px;
   max-height: 50px;
+  margin-bottom: 10px;
 }
 
 header {
   background: rgb(32, 27, 63);
   display: flex;
-
   justify-content: center;
   flex-direction: column;
   padding: 20px 0;
@@ -224,7 +231,7 @@ header h2 {
   color: white;
 }
 
-#about div {
+.about-content {
   padding: 60px;
 }
 
@@ -254,11 +261,22 @@ header h2 {
 }
 /* Responisve design */
 @media (max-width: 950px) {
+  body {
+    display: block;
+  }
   nav {
-    position: relative;
+    position: static;
     min-height: 100%;
+    width: 100%;
   }
   .avatar {
     display: none;
+  }
+  .link-list {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    padding-left: 0;
   }
 }
