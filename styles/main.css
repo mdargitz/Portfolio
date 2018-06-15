@@ -70,6 +70,11 @@ button {
   font-weight: 600;
 }
 
+button a {
+  color: white;
+  text-decoration: none;
+}
+
 button:hover {
   cursor: pointer;
   position: relative;
