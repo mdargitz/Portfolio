@@ -59,7 +59,6 @@ input {
 }
 
 button {
-  width: 400px;
   margin: 20px auto;
   border: 1px solid white;
   border-radius: 5px;
@@ -100,7 +99,7 @@ nav {
   min-height: 100vh;
   height: 100%;
   position: fixed;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .avatar {
@@ -115,7 +114,7 @@ nav a {
 
 /* Main Sections stlying */
 main {
-  padding-left: 300px;
+  padding-left: 290px;
 }
 
 
@@ -127,8 +126,8 @@ main {
 
 .item-img{
 box-shadow: 0 0 10px black;
-width: 400px;
-max-height: 500px;
+width: 100%;
+max-width: 400px;
 object-fit: cover;
 }
 
@@ -161,8 +160,15 @@ object-fit: cover;
 }
 
 .item-desc {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  .item-desc {
+    margin-left: 0;
+  }
 }
 
 .item-link {
@@ -258,6 +264,7 @@ header h2 {
 .horizontal-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .horizontal-list li {
