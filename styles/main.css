@@ -47,7 +47,14 @@ a {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-a:before {
+
+a:hover {
+  color: #3f2ed8;
+  text-shadow: 0px 0px 5px #5e5285;
+}
+
+/* Fancy hover, to be tweaked */
+/* a:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -72,7 +79,7 @@ a:hover, a:focus, a:active {
 a:hover:before, a:focus:before, a:active:before {
   -webkit-transform: scale(2);
   transform: scale(2);
-}
+} */
 
 
 form {
