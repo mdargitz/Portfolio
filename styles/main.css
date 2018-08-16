@@ -34,17 +34,16 @@ p {
 }
 
 a {
-  padding: 8px;
   color: #5e5285;
-  display: inline-block;
+  /* display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
-  -webkit-transition-property: color;
-  transition-property: color;
+  /* -webkit-transition-property: color; */
+  transition-property: color textshadow;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
@@ -52,6 +51,10 @@ a {
 a:hover {
   color: #3f2ed8;
   text-shadow: 0px 0px 5px #5e5285;
+}
+
+button a:hover {
+  color: white;
 }
 
 /* Fancy hover, to be tweaked */
@@ -341,6 +344,11 @@ header h2 {
 
   main {
     padding-left: 290px;
+  }
+
+  .link-list {
+    display: flex;
+    flex-direction: column;
   }
 }
 
