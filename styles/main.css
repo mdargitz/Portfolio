@@ -170,6 +170,10 @@ main {
   padding-left: 0;
 }
 
+section {
+  margin: 20px 0;
+}
+
 
 .portfolio-item{
   display: flex;
